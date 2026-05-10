@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    background: rgb(25,25,25);
+    color: white;
+    font-family: "Oswald", sans-serif;
+
+    overflow-x: hidden;
+}
+
+/* ========================= */
+/* TOP BAR */
+/* ========================= */
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    background: rgb(15,15,15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 100;
+}
+
+/* ========================= */
+/* CONTACT BUTTON */
+/* ========================= */
+
+.contact-btn {
+    position: absolute;
+    left: 35px;
+
+    padding: 10px 22px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.03);
+
+    font-size: 17px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.contact-btn:hover {
+    transform: scale(1.06);
+    background: rgba(255,255,255,0.07);
+}
+
+/* ========================= */
+/* CENTER NAV */
+/* ========================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links span {
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.nav-links span:hover {
+    transform: scale(1.08);
+    opacity: 0.75;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin-bottom: 25px;
+
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 24px;
+    opacity: 0.75;
+
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .topbar {
+        height: 70px;
+    }
+
+    .contact-btn {
+        left: 15px;
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .navbar {
+        gap: 25px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links span {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
