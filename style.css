@@ -29,12 +29,31 @@ body {
 }
 
 /* ========================= */
+/* LOGO IMAGE */
+/* ========================= */
+
+.logo-container {
+    position: absolute;
+    left: 35px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 42px;
+    width: auto;
+
+    object-fit: contain;
+}
+
+/* ========================= */
 /* CONTACT BUTTON */
 /* ========================= */
 
 .contact-btn {
     position: absolute;
-    left: 35px;
+    right: 35px;
 
     padding: 10px 22px;
 
@@ -46,6 +65,9 @@ body {
 
     font-size: 17px;
     font-weight: 500;
+
+    color: white;
+    text-decoration: none;
 
     cursor: pointer;
 
@@ -64,16 +86,6 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    gap: 70px;
-}
-
-/* LOGO */
-
-.logo {
-    font-size: 28px;
-    font-weight: 700;
-
-    letter-spacing: 2px;
 }
 
 /* NAVIGATION */
@@ -141,18 +153,15 @@ body {
         height: 70px;
     }
 
+    .logo-image {
+        height: 28px;
+    }
+
     .contact-btn {
-        left: 15px;
-        font-size: 13px;
-        padding: 8px 14px;
-    }
+        right: 15px;
 
-    .navbar {
-        gap: 25px;
-    }
-
-    .logo {
-        font-size: 18px;
+        font-size: 12px;
+        padding: 8px 12px;
     }
 
     .nav-links {
