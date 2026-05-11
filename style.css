@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: rgb(25,25,25);
+    background: rgb(28,28,28);
     color: white;
     font-family: "Oswald", sans-serif;
 
@@ -17,7 +17,7 @@ body {
     left: 0;
 
     width: 100%;
-    height: 80px;
+    height: 85px;
 
     background: rgb(15,15,15);
 
@@ -25,11 +25,13 @@ body {
     align-items: center;
     justify-content: center;
 
-    z-index: 100;
+    z-index: 1000;
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 /* ========================= */
-/* LOGO IMAGE */
+/* LOGO */
 /* ========================= */
 
 .logo-container {
@@ -37,53 +39,21 @@ body {
     left: 35px;
 
     top: 50%;
-    transform: translateY(-40%);
+    transform: translateY(-50%);
 
     display: flex;
     align-items: center;
 }
 
 .logo-image {
-    height: 95px;
+    height: 55px;
     width: auto;
 
     object-fit: contain;
 }
 
 /* ========================= */
-/* CONTACT BUTTON */
-/* ========================= */
-
-.contact-btn {
-    position: absolute;
-    right: 35px;
-
-    padding: 10px 22px;
-
-    border: 1px solid rgba(255,255,255,0.15);
-
-    border-radius: 8px;
-
-    background: rgba(255,255,255,0.03);
-
-    font-size: 17px;
-    font-weight: 500;
-
-    color: white;
-    text-decoration: none;
-
-    cursor: pointer;
-
-    transition: 0.25s;
-}
-
-.contact-btn:hover {
-    transform: scale(1.06);
-    background: rgba(255,255,255,0.07);
-}
-
-/* ========================= */
-/* CENTER NAV */
+/* NAVIGATION */
 /* ========================= */
 
 .navbar {
@@ -91,11 +61,9 @@ body {
     align-items: center;
 }
 
-/* NAVIGATION */
-
 .nav-links {
     display: flex;
-    gap: 35px;
+    gap: 38px;
 }
 
 .nav-links span {
@@ -113,15 +81,53 @@ body {
 }
 
 /* ========================= */
+/* CONTACT */
+/* ========================= */
+
+.contact-btn {
+    position: absolute;
+    right: 35px;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.25s;
+}
+
+.contact-btn:hover {
+    transform: scale(1.06);
+    background: rgba(255,255,255,0.09);
+}
+
+/* ========================= */
+/* PAGE */
+/* ========================= */
+
+.page-content {
+    padding-top: 85px;
+}
+
+/* ========================= */
 /* HERO */
 /* ========================= */
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     text-align: center;
 
@@ -129,21 +135,75 @@ body {
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 950px;
 }
 
 .hero h1 {
-    font-size: 72px;
-    margin-bottom: 25px;
+    font-size: 76px;
+    line-height: 1.05;
 
-    line-height: 1.1;
+    margin-bottom: 28px;
 }
 
 .hero p {
-    font-size: 24px;
-    opacity: 0.75;
-
+    font-size: 25px;
     line-height: 1.6;
+
+    opacity: 0.72;
+}
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+.features-section {
+    padding: 80px 20px 140px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 54px;
+
+    margin-bottom: 45px;
+}
+
+.features-box {
+    width: 100%;
+    max-width: 1050px;
+
+    background: rgb(52,52,52);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    border-radius: 18px;
+
+    padding: 50px;
+
+    box-sizing: border-box;
+}
+
+.feature-item {
+    font-size: 24px;
+    line-height: 1.8;
+
+    opacity: 0.88;
+
+    margin-bottom: 35px;
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================= */
+/* SPACER */
+/* ========================= */
+
+.bottom-space {
+    height: 300px;
 }
 
 /* ========================= */
@@ -153,22 +213,26 @@ body {
 @media (max-width: 768px) {
 
     .topbar {
-        height: 70px;
+        height: 72px;
     }
 
     .logo-image {
-        height: 28px;
+        height: 34px;
+    }
+
+    .logo-container {
+        left: 15px;
     }
 
     .contact-btn {
-        right: 15px;
+        right: 12px;
 
         font-size: 12px;
         padding: 8px 12px;
     }
 
     .nav-links {
-        gap: 12px;
+        gap: 14px;
     }
 
     .nav-links span {
@@ -176,10 +240,23 @@ body {
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 44px;
     }
 
     .hero p {
         font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+
+    .features-box {
+        padding: 28px;
+    }
+
+    .feature-item {
+        font-size: 18px;
+        line-height: 1.7;
     }
 }
