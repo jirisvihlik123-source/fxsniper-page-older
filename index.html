@@ -12,7 +12,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
+    
+    <script src="script.js"></script>
 <body>
 
     <!-- ========================= -->
@@ -133,6 +134,54 @@
             turpis pretium erat, vitae feugiat purus lacus sed nibh.
             Vestibulum ante ipsum primis in faucibus orci luctus.
 
+        </div>
+
+    </div>
+    
+<section class="stats-section">
+
+    <h2 class="stats-title">Long-Term Statistics</h2>
+
+    <p class="stats-subtitle">
+        Historical performance based on real closed Telegram alerts.
+    </p>
+
+    <div class="stats-tabs">
+        <button class="pair-tab active" data-pair="GBPJPY">GBPJPY</button>
+        <button class="pair-tab" data-pair="USDCHF">USDCHF</button>
+        <button class="pair-tab" data-pair="EURUSD">EURUSD</button>
+        <button class="pair-tab" data-pair="EURGBP">EURGBP</button>
+        <button class="pair-tab" data-pair="USDCAD">USDCAD</button>
+    </div>
+
+    <div class="stats-dashboard">
+
+        <div class="stats-info">
+            <h3 id="pair-name">GBPJPY</h3>
+
+            <div class="stat-row">
+                <span>Trades</span>
+                <strong id="pair-trades">146</strong>
+            </div>
+
+            <div class="stat-row">
+                <span>Winrate</span>
+                <strong id="pair-winrate">46.58%</strong>
+            </div>
+
+            <div class="stat-row">
+                <span>Profit Factor</span>
+                <strong id="pair-pf">1.28</strong>
+            </div>
+
+            <div class="stat-row">
+                <span>Net Pips</span>
+                <strong id="pair-pips">+243.6</strong>
+            </div>
+        </div>
+
+        <div class="chart-box">
+            <img id="pair-chart" src="performance/GBPJPY.png" alt="GBPJPY Equity Curve">
         </div>
 
     </div>
